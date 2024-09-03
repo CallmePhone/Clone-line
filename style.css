@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-image: url(img/bg.jpg);
+} */
+
+/* .container{
+    max-width: 1140px;
+    margin: 15.5rem auto;
+    
+} */
+
+.zoom-container {
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.zoom-image {
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    animation: zoomAndFade 10s infinite ease-in-out;
+    position: absolute;
+}
+
+.zoom-container {
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.zoom-image {
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    animation: zoomAndFade 10s infinite ease-in-out;
+    position: absolute;
+}
+
+.zoom-container::after {
+    content: "";
+    background-image: url('img/mv02.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fadeImage 10s infinite ease-in-out;
+    opacity: 0;
+}
+
+@keyframes zoomAndFade {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+@keyframes fadeImage {
+
+    0%,
+    40%,
+    100% {
+        opacity: 0;
+    }
+
+    50%,
+    90% {
+        opacity: 1;
+    }
+}
+
+.nav-con {
+    max-width: 1140px;
+    position: absolute;
+    top: 285px;
+    left: 150px;
+    z-index: 1;
+}
+
+
+h1 {
+    font-size: 130px;
+    font-weight: 800;
+    font-family: LINESeed, sans-serif;
+    color: #ffffff;
+    /* text-align: left; */
+
+}
+
+p {
+    font-family: SFPro, Arial, "Noto Sans JP", "Noto Sans KR", sans-serif;
+    font-size: 40px;
+    text-indent: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+nav {
+    padding: 1.7rem;
+    background-color: #fbf9f7;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+
+
+.logo a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    font-weight: 700;
+    font-family: SFPro, Arial, "Noto Sans JP", "Noto Sans KR", sans-serif;
+
+}
+
+.menu {
+    font-size: 16px;
+    display: flex;
+    list-style: none;
+    font-family: SFPro, Arial, "Noto Sans JP", AppleSDGothicNeo, sans-serif;
+}
+
+.menu li {
+    margin: 0 2.5rem;
+
+}
+
+.logo {
+
+    list-style: none;
+    /* right: 10rem; */
+
+}
+
+
+
+.menu .line {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    /* เว้นระยะห่างระหว่างเส้นใต้กับข้อความ */
+    text-decoration-thickness: 4px;
+    /* ความหนาของเส้นใต้ */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
+ul .currentLang {
+    font-size: 14px;
+    color: #1e1e1e;
+
+}
+
+.currentLang a {
+    text-decoration: none;
+    color: #1e1e1e;
+    display: flex;
+    font-family: SFPro, Arial, "Noto Sans JP", "Noto Sans KR", sans-serif;
+}
+
+.img-con img {
+    position: absolute;
+    left: 10rem;
+    top: 35rem;
+}
+
+.img-con p {
+    position: absolute;
+    font-style: normal;
+    width: 500;
+    left: 11.5rem;
+    top: 35rem;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: SFPro, Arial, "Noto Sans JP", "Noto Sans KR", sans-serif;
+}
+
+.icon-logo {
+    position: absolute;
+    left: 11rem;
+    top: 38rem;
+    font-size: 25px;
+    /* box-sizing: border-box;
+    display: inline-block; */
+    
+
+}
+
+.icon-logo a {
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid hsla(0, 0%, 100%, .5);
+    overflow: hidden;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin-right: 4px;
+    box-sizing: border-box;
+    
+}
+
+.icon-logo i{
+    
+   margin-left: 18px;
+   margin-top: 15px;
+}
+
+.con-life{
+    color: #000000;
+    margin-top: 50rem;
+}
